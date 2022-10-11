@@ -8,7 +8,7 @@ public class ArrayEx {
     }
 
     public static void main(String[] args) {
-        int[] a = new int[10];
+        int[] array = new int[10];
         Integer[] a1 = {4};
        // int[] a1 = {45, 6, 65, 44, 5, 6};
 
