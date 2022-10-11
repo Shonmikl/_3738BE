@@ -15,9 +15,15 @@ public class Hero {
     //default == package private
     float f;
 
+    public Hero(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
     private static void walk(String s) {
     }
-//function == methods
+
+    //function == methods
     public void say() {
 
         //логика.....
@@ -36,11 +42,22 @@ public class Hero {
     public void setAge(int age) {
         this.age = age;
     }
+
+    String d1 =";;;";
+
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
+
 class Main {
     public static void main(String[] args) {
         //data type  name  = create object  constructor
-            Hero      hero =   new           Hero();
-
+        Hero hero = new Hero("mik", 22);
+        System.out.println(hero);
     }
 }
