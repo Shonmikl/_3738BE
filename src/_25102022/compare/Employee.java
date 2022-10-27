@@ -6,6 +6,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 import java.util.Comparator;
+import java.util.Objects;
 
 @Getter
 @Setter
@@ -24,6 +25,20 @@ public class Employee implements Comparable<Employee> {
             res = this.surname.compareTo(secondEmployee.surname);
         }
         return res;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return  Objects.equals(name, employee.name)
+                && Objects.equals(surname, employee.surname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname);
     }
 }
 
