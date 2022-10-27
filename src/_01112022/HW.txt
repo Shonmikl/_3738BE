@@ -1,0 +1,31 @@
+- OOP (Object-Oriented Programming)
+Classes, objects, fields and methods of an object. Encapsulation.
+Fields and methods of a Class. Modifier "static" and "final".
+Inheritance. Abstract classes. Polymorphism
+Enums in Java
+Understanding reference type. Reference Data Types in Java
+- JCF. Java Collections Framework
+Working with Arrays in Java. Binary search. Sort.
+Data structures definition. Interfaces. Data structure 'List'. ArraysList implementation, beginning.
+Iterators and Iterable. Foreach syntax.
+Lists implementations. LinkedList.
+Java Set implementation. HashSet. Exercises.
+Comparing objects in Java. Comparator, Comparable. Method sort.
+Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
+Data structure 'Map'. Object.hashCode, HashMap implementation.
+Trees, Binary Trees, Tree Map.
+Graphs. Practice.
+
+//Создать класс с 5 полями разных типов
+//Сделать 4 наследника от этого класса так, что бы 2 наследовались от двух
+//Имплементировать Comparable на два поля
+//Создать для остальных полей Компаратор
+//Создать 15 объектов и заполнить их данными
+//Сделать отдельный класс БазаДанных которая будет в себе хранить МАПУ
+//Ключ = объект, значение сами решите
+//Так же в БД будут отсортированный СЭТ Deque Тримап
+//В классе БазаДанных сделать метод который будет добавлять объект во все четыре структуры
+//Естественно должны быть конструкторы, приват поля геттеры итд
+//Естественно все должно быть правильно именовано и разбито оп папкам и по классам
+//Интерфейс - с доп опцией должен быть!!!
+//Сделать в отдельном проекте
