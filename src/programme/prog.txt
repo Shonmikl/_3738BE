@@ -1,20 +1,20 @@
-OOP (Object-Oriented Programming)
-Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.’
-Inheritance. Abstract classes. Polymorphism
-Enums in Java
-Understanding reference type. Reference Data Types in Java
-JCF. Java Collections Framework
-Working with Arrays in Java. Binary search. Sort.
-Data structures definition. Interfaces. Data structure 'List'. ArraysList implementation, beginning.
-Iterators and Iterable. Foreach syntax.
-Lists implementations. LinkedList.
-Java Set implementation. HashSet. Exercises.
-Comparing objects in Java. Comparator, Comparable. Method sort.
-Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
-Data structure 'Map'. Object.hashCode, HashMap implementation.
-Trees, Binary Trees, Tree Map.
-Graphs. Plractice.
-Lambdas & Stream API
+++OOP (Object-Oriented Programming)
+++Classes, objects, fields and methods of an object. Encapsulation. Fields and methods of a Class. Modifier 'static' and 'final.’
+++Inheritance. Abstract classes. Polymorphism
+++Enums in Java
+++Understanding reference type. Reference Data Types in Java
+***************JCF. Java Collections Framework************************
+++Working with Arrays in Java. Binary search. Sort.
+++Data structures definition. Interfaces. Data structure 'List'. ArraysList implementation, beginning.
+++Iterators and Iterable. Foreach syntax.
+++Lists implementations. LinkedList.
+++Java Set implementation. HashSet. Exercises.
+++Comparing objects in Java. Comparator, Comparable. Method sort.
+++Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
+++Data structure 'Map'. Object.hashCode, HashMap implementation.
+++Trees, Binary Trees, Tree Map.
+Graphs. Practice.
+*********************Lambdas & Stream API************************************
 Lambdas, Functional Interfaces, Method references.
 Existing Functional Interfaces in Java 8. Functions and Predicates.
 Stream API: Stream, primitive streams. Intermediate and Terminal operations.
@@ -25,20 +25,20 @@ Introduction to Input and Output in Java
 Reading/Writing streams of bytes.
 Reading/Writing streams of strings.
 General and repetition
-Test, Summarizing
+*********************************Test, Summarizing***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
 Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 Generics, Object.equals, Exceptions.
-Unit testing. JUnit.
+*************************Unit testing. JUnit.******************************
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
-Multithreading
+*************************Multithreading*************************************
 General introduction to Java multithreading, main problems.
 Thread, Runnable, Daemon threads, Interrupted Exception
 Synchronization. Mutex, Monitor. Atomic types..
 Object.wait, Object.join. One-element blocking queue (Messenger).
 JavaUtilConcurrent. Concurrent Collections.
 Threads Executors.
-Spring & Spring Boot
+**************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
 Принципы программирования: DRY, YAGNI, KISS, SOLID.
 Reflections. Annotations..
