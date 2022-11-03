@@ -17,13 +17,13 @@ Graphs. Practice.
 *********************Lambdas & Stream API************************************
 Lambdas, Functional Interfaces, Method references.
 Existing Functional Interfaces in Java 8. Functions and Predicates.
-Stream API: Stream, primitive streams. Intermediate and Terminal operations.
+Stream API: Stream, primitive _03112022. Intermediate and Terminal operations.
 Java Streams: Flat map.
 Java Streams: Collectors and Custom Collectors.
 Input and Output in Java.
 Introduction to Input and Output in Java
-Reading/Writing streams of bytes.
-Reading/Writing streams of strings.
+Reading/Writing _03112022 of bytes.
+Reading/Writing _03112022 of strings.
 General and repetition
 *********************************Test, Summarizing***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
