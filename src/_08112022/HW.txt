@@ -4,6 +4,39 @@
 - Создать List<Integer>
 
 - Далее обработать каждую сущность....
+filter
+forEach
+reduce
+sorted
+map
+distinct
+peek - Alexandr Sapunov готовит объяснение с примерами что этот метод делает
+flatMap - Alexey Babaykin готовит объяснение с примерами что этот метод делает
+groupingBy - Alexey Lavrov готовит объяснение с примерами что этот метод делает
+partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
+skip
+findFirst
+min
+max
+boxed Alexey Lavrov готовит объяснение с примерами что этот метод делает
+sum
+average
+allMatch Alexandr Sapunov готовит объяснение с примерами что этот метод делает
+anyMatch Alexey Babaykin готовит объяснение с примерами что этот метод делает
+reverseOrder
+parallelStream
+flatMap Alexey Khudoshin готовит объяснение с примерами что этот метод делает
+
+
+*
+Дано: Stream.of("Linux", "Windows", "Mac")
+Надо: Объединение нескольких строк в одну
+
+***
+Дано:
+List<String> fruits = Stream.of("apple", "banana", "lemon", "orange")
+Надо: преобразовать стрим из строк в мапу, причём ключом сделать первую букву соответствующего слова
+На выходе должно быть: {a=apple, b=banana, l=lemon, o=orange}
 
 
 
