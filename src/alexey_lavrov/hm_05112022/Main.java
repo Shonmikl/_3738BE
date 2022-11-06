@@ -4,7 +4,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.util.stream.Collectors.averagingInt;
 import static java.util.stream.Collectors.groupingBy;
 
 public class Main {
@@ -80,11 +79,6 @@ public class Main {
                 .skip(10)
                 .limit(3)
                 .max(Comparator.comparingInt(o -> o)));
-//        System.out.println("sum:" + intList.stream()
-//                .skip(10)
-//                .limit(3)
-//                .sum());
-//        intList.stream().flatMapToInt(averagingInt())
 
         System.out.println("\n\n  -->FlatMap stream :");
         userList.stream()
@@ -115,10 +109,8 @@ public class Main {
         System.out.println("AVR int array:" + Arrays.stream(newIntArr).average());
         System.out.println("AVR Integer array:" + Arrays.stream(integerArray).mapToInt(integer -> integer).average());
 
-//        partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
-//  ***      boxed Alexey Lavrov готовит объяснение с примерами что этот метод делает
-//        reverseOrder
-//        parallelStream
-
+        // partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
+        // reverseOrder
+        // parallelStream
     }
 }
