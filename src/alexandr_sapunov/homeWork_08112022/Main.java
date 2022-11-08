@@ -68,5 +68,7 @@ public class Main {
                 .filter(el -> el.getSex() =='m')
                 .limit(3)
                 .forEach(System.out::println);
+
+        System.out.println("Объединение нескольких строк в одну " + stringListHW.stream().reduce((a, b) -> a + b).get());
     }
 }
