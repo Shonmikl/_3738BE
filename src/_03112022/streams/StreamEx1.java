@@ -47,6 +47,8 @@ public class StreamEx1 {
                 .filter(e -> e.getAvgGrade() > 7 && e.getAvgGrade() < 8)
                 .collect(Collectors.toList());
 
+        List<Student> arrayList3 = studentList.stream().collect(Collectors.toList());
+
 
         //System.out.println(arrayList);
 
