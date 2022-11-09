@@ -65,7 +65,7 @@ public class Main {
                     el.setAdmin(true);
                     return el;
                 })
-                .peek(el -> el.setAge(el.getAge() + 5))
+                .peek(el -> el.setAge(el.getAge() + 5))               /// TODO: УТОЧНИТЬ!!!!!
                 .sorted((a, b) -> b.getAge() - a.getAge())
                 .forEach(System.out::print);
 
@@ -92,8 +92,10 @@ public class Main {
                 .forEach(System.out::println);
 
         System.out.println("\n\n -->Stream (allMatch, anyMatch):");
-        System.out.println("Is all 18+:" + userList.stream().allMatch(user -> user.getAge()>=18));
-        System.out.println("Is someone Admin:" + userList.stream().anyMatch(User::isAdmin));
+        System.out.println("Is all 18+:" + userList.stream()
+                .allMatch(user -> user.getAge()>=18));
+        System.out.println("Is someone Admin:" + userList.stream()
+                .anyMatch(User::isAdmin));
 
         int[] newIntArr =   new Random().ints(20, 0, 50)
                 .toArray();
@@ -101,6 +103,8 @@ public class Main {
         Stream<Integer> integerStream = Arrays.stream(newIntArr).boxed();
         Integer[] integerArray = integerStream.toArray(Integer[]::new);
         System.out.println(Arrays.stream(integerArray).findFirst());
+
+        System.out.println(Arrays.stream(Arrays.stream(newIntArr).boxed().toArray(Integer[]::new)).findFirst());
 
 
         System.out.println("Sum int array:" + Arrays.stream(newIntArr).sum());
