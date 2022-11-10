@@ -87,17 +87,17 @@ public class Main {
                 .flatMap(user -> Stream
                         .of(
                                 String.format("%s:  now Age - %d", user.getName(), user.getAge()),
-                                String.format("%s:  Age after some years - %d", user.getName(), (user.getAge() + (int)(new Random()).nextInt(20)))
+                                String.format("%s:  Age after some years - %d", user.getName(), (user.getAge() + (int) (new Random()).nextInt(20)))
                         ))
                 .forEach(System.out::println);
 
         System.out.println("\n\n -->Stream (allMatch, anyMatch):");
         System.out.println("Is all 18+:" + userList.stream()
-                .allMatch(user -> user.getAge()>=18));
+                .allMatch(user -> user.getAge() >= 18));
         System.out.println("Is someone Admin:" + userList.stream()
                 .anyMatch(User::isAdmin));
 
-        int[] newIntArr =   new Random().ints(20, 0, 50)
+        int[] newIntArr = new Random().ints(20, 0, 50)
                 .toArray();
         // преобразовываем поток примитивных типов в поток объектов
         Stream<Integer> integerStream = Arrays.stream(newIntArr).boxed();
@@ -116,5 +116,27 @@ public class Main {
         // partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
         // reverseOrder
         // parallelStream
+
+
+        /*
+          TODO:
+              Дано: Stream.of("Linux", "Windows", "Mac")
+              Надо: Объединение нескольких строк в одну
+         */
+        System.out.println();
+        System.out.println(Stream.of("Linux", "Windows", "Mac").reduce((s, s2) -> s + '|' + s2));
+
+
+        /*
+         * TODO:
+         *  Дано:
+         *  List<String> fruits = Stream.of("apple", "banana", "lemon", "orange")
+         *  Надо: преобразовать стрим из строк в мапу, причём ключом сделать первую букву соответствующего слова
+         *  На выходе должно быть: {a=apple, b=banana, l=lemon, o=orange}
+         */
+        List<String> fruits = Stream.of("apple", "banana", "lemon", "orange").toList();
+        Map<Character,String> map = fruits.stream().collect(Collectors.toMap(s -> s.charAt(0),s -> s));
+        System.out.println(map);
     }
+
 }
