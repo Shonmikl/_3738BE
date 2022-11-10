@@ -3,6 +3,7 @@
 ++Inheritance. Abstract classes. Polymorphism
 ++Enums in Java
 ++Understanding reference type. Reference Data Types in Java
+
 ***************JCF. Java Collections Framework************************
 ++Working with Arrays in Java. Binary search. Sort.
 ++Data structures definition. Interfaces. Data structure 'List'. ArraysList implementation, beginning.
@@ -14,23 +15,27 @@
 ++Data structure 'Map'. Object.hashCode, HashMap implementation.
 ++Trees, Binary Trees, Tree Map.
 Graphs. Practice.
+
 *********************Lambdas & Stream API************************************
-Lambdas, Functional Interfaces, Method references.
-Existing Functional Interfaces in Java 8. Functions and Predicates.
-Stream API: Stream, primitive _03112022. Intermediate and Terminal operations.
-Java Streams: Flat map.
-Java Streams: Collectors and Custom Collectors.
+++Lambdas, Functional Interfaces, Method references.
+++Existing Functional Interfaces in Java 8. Functions and Predicates.
+++Stream API: Stream, primitive _03112022. Intermediate and Terminal operations.
+++Java Streams: Flat map.
+++Java Streams: Collectors and Custom Collectors.
 Input and Output in Java.
 Introduction to Input and Output in Java
-Reading/Writing _03112022 of bytes.
-Reading/Writing _03112022 of strings.
+Reading/Writing of bytes.
+Reading/Writing of strings.
 General and repetition
+
 *********************************Test, Summarizing***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
 Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 Generics, Object.equals, Exceptions.
+
 *************************Unit testing. JUnit.******************************
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
+
 *************************Multithreading*************************************
 General introduction to Java multithreading, main problems.
 Thread, Runnable, Daemon threads, Interrupted Exception
@@ -38,6 +43,7 @@ Synchronization. Mutex, Monitor. Atomic types..
 Object.wait, Object.join. One-element blocking queue (Messenger).
 JavaUtilConcurrent. Concurrent Collections.
 Threads Executors.
+
 **************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
 Принципы программирования: DRY, YAGNI, KISS, SOLID.
@@ -51,4 +57,3 @@ Spring Boot: JPA and databases
 Spring Boot: validation
 Spring Boot: logging and AOP basics
 Spring Boot: scheduled jobs
-
