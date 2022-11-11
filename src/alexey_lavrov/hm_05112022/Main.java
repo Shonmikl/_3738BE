@@ -138,5 +138,4 @@ public class Main {
         Map<Character,String> map = fruits.stream().collect(Collectors.toMap(s -> s.charAt(0),s -> s));
         System.out.println(map);
     }
-
 }
