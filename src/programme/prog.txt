@@ -31,7 +31,9 @@ General and repetition
 *********************************Test, Summarizing***************************
 Regular expressions. Basics. Regular Expressions, Java RegExp
 Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
-++Generics, Object.equals, Exceptions.
+++Generics,
+Object.equals
+Exceptions.
 
 *************************Unit testing. JUnit.******************************
 LocalDate, LocalDateTime, ZonedDateTime, exercises.

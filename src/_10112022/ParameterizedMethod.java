@@ -1,5 +1,7 @@
 package _10112022;
 
+import _10112022.game.Participant;
+
 import java.util.ArrayList;
 
 public class ParameterizedMethod {
@@ -29,7 +31,7 @@ class OtherPair<V1, V2> {
     private V1 value1;
     private V2 value2;
 
-//    public V1 get(V2 value) {
-//        return ;
-//    }
+    public void get(V2 value) {
+        
+    }
 }
