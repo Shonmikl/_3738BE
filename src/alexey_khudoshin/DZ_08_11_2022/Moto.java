@@ -175,13 +175,13 @@ public class Moto {
 
         System.out.println(bikes);
 
-        List<Map.Entry<String, String>> bikesNameAge = bikes.entrySet().stream()
-                .flatMap(entry -> entry.getValue().stream()
-                        .map(listElement -> new AbstractMap.SimpleEntry<>(entry.getKey(), listElement))
-                ).collect(Collectors.toList());
+//        List<Map.Entry<String, String>> bikesNameAge = bikes.entrySet().stream()
+//                .flatMap(entry -> entry.getValue().stream()
+//                        .map(listElement -> new AbstractMap.SimpleEntry<>(entry.getKey(), listElement))
+//                ).collect(Collectors.toList());
 
 
-        System.out.println(bikesNameAge);
+//        System.out.println(bikesNameAge);
 
     }
 

@@ -41,7 +41,6 @@ public class Main {
                 .filter(el -> el.length() < 5)
                 .map(el -> el.toUpperCase() + " : ")
                 .sorted()
-                .distinct()
                 .forEach(System.out::print);
 
         System.out.println("\n\n  -->String Group list stream:");

@@ -1,6 +1,6 @@
 package alexey_khudoshin.DZ_27_10_2022;
 
-public class OneCylinder extends Motorcycles {
+public class OneCylinder extends Motorrad {
     String systemAddOiled;
 
     public OneCylinder(String name, int power, String color, int engineVolume, int speed, String systemAddOiled) {
