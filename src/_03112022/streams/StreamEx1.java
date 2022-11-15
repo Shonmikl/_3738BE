@@ -35,11 +35,10 @@ public class StreamEx1 {
         facultyList.add(f1);
         facultyList.add(f2);
 
-//        facultyList.stream()
-//                .flatMap(faculty -> faculty.getStudentsOnFaculty()
-//                        .stream())
-//                .forEach(el-> System.out.println(el.getName()));
-
+        facultyList.stream()
+                .flatMap(faculty -> faculty.getStudentsOnFaculty()
+                        .stream())
+                .forEach(el-> System.out.println(el.getName()));
 
         Stream<Student> studentStream = Stream.of(s1, s2, s3, s4, s5);
 
@@ -111,9 +110,15 @@ public class StreamEx1 {
 
         //System.out.println(min);
         studentList.stream()
-                .filter(el->el.getAge()>22)
-                .skip(0)
-                .limit(2)
+                .filter(el->el.getAge()>22) //1 1 1 1
+                .skip(0)// 1 1 1
+                .limit(2) // 1 1
                 .forEach(System.out::println);
+
+        Map<Boolean, List<Student>> map = studentList.stream()
+                .collect(Collectors.groupingBy(e -> e.getAvgGrade() > 7));
+        for (Map.Entry<Boolean, List<Student>> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ":" + entry.getValue().toString());
+        }
     }
 }
