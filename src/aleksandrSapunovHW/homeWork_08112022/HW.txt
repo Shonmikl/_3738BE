@@ -1,0 +1,43 @@
+- Создать класс какой-то с 5 параметрами по примере студентов
+- Создать массив чисел
+- Создать List<String>
+- Создать List<Integer>
+
+- Далее обработать каждую сущность....
+filter //норм
+forEach  //небольшая проблемма но вроде уже ясно
+reduce  //norm
+sorted  //norm
+map    //ok
+distinct  //ok
+peek - Alexandr Sapunov готовит объяснение с примерами что этот метод делает  //easy
+flatMap - Alexey Babaykin готовит объяснение с примерами что этот метод делает
+groupingBy - Alexey Lavrov готовит объяснение с примерами что этот метод делает
+partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
+skip  //ok
+findFirst  //ok
+min  //ok
+max  //ok
+boxed Alexey Lavrov готовит объяснение с примерами что этот метод делает  // досмотрел
+sum  //ok
+average  //norm
+allMatch Alexandr Sapunov готовит объяснение с примерами что этот метод делает  //gud
+anyMatch Alexey Babaykin готовит объяснение с примерами что этот метод делает  //gud
+reverseOrder  //none, уже посмотрел
+parallelStream  //none
+flatMap Alexey Khudoshin готовит объяснение с примерами что этот метод делает
+
+
+*
+Дано: Stream.of("Linux", "Windows", "Mac")
+Надо: Объединение нескольких строк в одну
+//ok получилось
+***
+Дано:
+List<String> fruits = Stream.of("apple", "banana", "lemon", "orange")
+Надо: преобразовать стрим из строк в мапу, причём ключом сделать первую букву соответствующего слова
+На выходе должно быть: {a=apple, b=banana, l=lemon, o=orange}
+//problem
+
+
+....и доделать домашку //not to mach time
