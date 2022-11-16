@@ -10,5 +10,5 @@ public class TestFI implements Predicate<TestFI> {
     public boolean test(TestFI testFI) {
         return false;
     }
-    FileWriter
+  //  FileWriter
 }

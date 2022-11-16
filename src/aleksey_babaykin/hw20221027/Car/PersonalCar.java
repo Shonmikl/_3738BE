@@ -1,6 +1,6 @@
 package aleksey_babaykin.hw20221027.Car;
 
-import hw20221027.Enams.CarStatus;
+import aleksey_babaykin.hw20221027.Enams.CarStatus;
 import lombok.Getter;
 import lombok.Setter;
 
