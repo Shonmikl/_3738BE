@@ -1,4 +1,4 @@
-package alexey_lavrov.hm_05112022;
+package alexey_lavrov.hm_221105;
 
 import java.util.*;
 import java.util.stream.Collectors;

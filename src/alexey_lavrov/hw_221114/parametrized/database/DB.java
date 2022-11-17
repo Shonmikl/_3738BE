@@ -1,9 +1,9 @@
-package alexey_lavrov.hw_14112022.parametrized.database;
+package alexey_lavrov.hw_221114.parametrized.database;
 
 import lombok.Getter;
 import lombok.Setter;
-import alexey_lavrov.hw_14112022.parametrized.models.Bee;
-import alexey_lavrov.hw_14112022.parametrized.models.WorkerBee;
+import alexey_lavrov.hw_221114.parametrized.models.Bee;
+import alexey_lavrov.hw_221114.parametrized.models.WorkerBee;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;

@@ -1,6 +1,4 @@
-package alexey_lavrov.hw_14112022.parametrized.models;
-
-import java.util.Date;
+package alexey_lavrov.hw_221114.parametrized.models;
 
 public class AdultWorkerBee extends WorkerBee {
     public AdultWorkerBee(int id, String name) {

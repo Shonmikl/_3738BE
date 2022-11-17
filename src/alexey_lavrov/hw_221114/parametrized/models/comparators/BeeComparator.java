@@ -1,7 +1,6 @@
-package alexey_lavrov.hw_14112022.parametrized.models.comparators;
+package alexey_lavrov.hw_221114.parametrized.models.comparators;
 
-import alexey_lavrov.hw_14112022.parametrized.models.Bee;
-
+import alexey_lavrov.hw_221114.parametrized.models.Bee;
 import java.util.Comparator;
 
 public class BeeComparator implements Comparator<Bee> {

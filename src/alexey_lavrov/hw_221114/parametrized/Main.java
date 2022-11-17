@@ -1,13 +1,9 @@
-package alexey_lavrov.hw_14112022.parametrized;
+package alexey_lavrov.hw_221114.parametrized;
 
-import alexey_lavrov.hw_14112022.parametrized.models.*;
-import alexey_lavrov.hw_14112022.parametrized.models.comparators.BeeComparator;
-import alexey_lavrov.hw_14112022.parametrized.models.interfaces.Flying;
-import alexey_lavrov.hw_14112022.parametrized.services.HiveService;
+import alexey_lavrov.hw_221114.parametrized.models.*;
 import com.github.javafaker.Faker;
 
 import java.util.Random;
-import java.util.stream.Collectors;
 
 //Создать класс с 5 полями разных типов
 //Сделать 4 наследника от этого класса так, что бы 2 наследовались от двух

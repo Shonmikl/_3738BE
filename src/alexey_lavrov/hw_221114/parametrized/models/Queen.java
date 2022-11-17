@@ -1,9 +1,7 @@
-package alexey_lavrov.hw_14112022.parametrized.models;
+package alexey_lavrov.hw_221114.parametrized.models;
 
-import alexey_lavrov.hw_14112022.parametrized.models.interfaces.Oviposition;
-import alexey_lavrov.hw_14112022.parametrized.models.interfaces.Reproducing;
-
-import java.util.Date;
+import alexey_lavrov.hw_221114.parametrized.models.interfaces.Oviposition;
+import alexey_lavrov.hw_221114.parametrized.models.interfaces.Reproducing;
 
 public class Queen extends Bee implements Oviposition, Reproducing {
 

@@ -1,16 +1,11 @@
-package alexey_lavrov.hw_14112022;
-
-import alexey_lavrov.hm_05112022.User;
+package alexey_lavrov.hw_221114;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.groupingBy;
-import static java.util.stream.Collectors.toList;
 
 public class Main {
     public static void main(String[] args) {

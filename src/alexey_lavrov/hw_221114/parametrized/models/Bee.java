@@ -1,6 +1,5 @@
-package alexey_lavrov.hw_14112022.parametrized.models;
+package alexey_lavrov.hw_221114.parametrized.models;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 

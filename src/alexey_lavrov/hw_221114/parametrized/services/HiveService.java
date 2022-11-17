@@ -1,10 +1,10 @@
-package alexey_lavrov.hw_14112022.parametrized.services;
+package alexey_lavrov.hw_221114.parametrized.services;
 
-import alexey_lavrov.hw_14112022.parametrized.database.DB;
+import alexey_lavrov.hw_221114.parametrized.database.DB;
 import lombok.Getter;
 import lombok.Setter;
-import alexey_lavrov.hw_14112022.parametrized.models.Bee;
-import alexey_lavrov.hw_14112022.parametrized.models.WorkerBee;
+import alexey_lavrov.hw_221114.parametrized.models.Bee;
+import alexey_lavrov.hw_221114.parametrized.models.WorkerBee;
 
 import java.util.Deque;
 import java.util.Map;
