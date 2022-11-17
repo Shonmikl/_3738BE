@@ -12,7 +12,7 @@ map    //ok
 distinct  //ok
 peek - Alexandr Sapunov готовит объяснение с примерами что этот метод делает  //easy
 flatMap - Alexey Babaykin готовит объяснение с примерами что этот метод делает
-groupingBy - Alexey Lavrov готовит объяснение с примерами что этот метод делает
+groupingBy - Alexey Lavrov готовит объяснение с примерами что этот метод делает  // разобрался уже
 partitioningBy - Alexey Khudoshin готовит объяснение с примерами что этот метод делает
 skip  //ok
 findFirst  //ok
