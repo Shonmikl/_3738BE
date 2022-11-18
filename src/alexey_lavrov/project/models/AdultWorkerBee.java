@@ -1,4 +1,4 @@
-package alexey_lavrov.hw_221114.parametrized.models;
+package alexey_lavrov.project.models;
 
 public class AdultWorkerBee extends WorkerBee {
     public AdultWorkerBee(int id, String name) {

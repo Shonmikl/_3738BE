@@ -1,7 +1,7 @@
-package alexey_lavrov.hw_221114.parametrized.models;
+package alexey_lavrov.project.models;
 
-import alexey_lavrov.hw_221114.parametrized.models.interfaces.Flying;
-import alexey_lavrov.hw_221114.parametrized.models.interfaces.Working;
+import alexey_lavrov.project.models.interfaces.Flying;
+import alexey_lavrov.project.models.interfaces.Working;
 
 public class WorkerBee extends Bee implements Flying, Working {
 

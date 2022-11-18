@@ -1,7 +1,7 @@
 package alexey_lavrov.hw_221115;
 
-import alexey_lavrov.hw_221114.parametrized.models.Bee;
-import alexey_lavrov.hw_221114.parametrized.models.Drone;
+import alexey_lavrov.project.models.Bee;
+import alexey_lavrov.project.models.Drone;
 import com.github.javafaker.Faker;
 
 import java.io.*;
