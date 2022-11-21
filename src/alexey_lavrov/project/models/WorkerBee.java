@@ -5,7 +5,7 @@ import alexey_lavrov.project.models.interfaces.Working;
 
 public class WorkerBee extends Bee implements Flying, Working {
 
-    public WorkerBee(int id, String name) {
+    public WorkerBee(Integer id, String name) {
         super(id, name);
     }
 

@@ -21,26 +21,6 @@ public class Main {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-//        for (int i = 0; i < 16; i++) {
-//
-//            switch (i) {
-//                case 0 -> hiveService.addBeeInHive(
-//                        new Queen(
-//                                rnd.nextInt(100),
-//                                faker.address().firstName(),
-//                                faker.date().birthday(),
-//                                rnd.nextFloat(3),
-//                                rnd.nextBoolean()
-//                        ));
-//                case 1, 2, 3, 4 -> hiveService.addBeeInHive(new Drone(
-//                        rnd.nextInt(100),
-//                        faker.address().firstName(),
-//                        faker.date().birthday(),
-//                        rnd.nextFloat(3),
-//                        rnd.nextBoolean()
-//                ));
-//            }
-//        }
     }
 
     public static void createNameList() throws IOException {

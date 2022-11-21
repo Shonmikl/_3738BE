@@ -1,7 +1,7 @@
 package alexey_lavrov.project.models;
 
 public class AdultWorkerBee extends WorkerBee {
-    public AdultWorkerBee(int id, String name) {
+    public AdultWorkerBee(Integer id, String name) {
         super(id, name);
     }
 

@@ -3,12 +3,13 @@ package alexey_lavrov.project.models;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
 @Getter
 @Setter
-public class Bee implements Comparable<Bee> {
+public class Bee implements Comparable<Bee>, Serializable {
     private Integer id;
     private String name;
     private Date birthday;
