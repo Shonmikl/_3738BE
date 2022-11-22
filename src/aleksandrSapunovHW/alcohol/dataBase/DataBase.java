@@ -19,8 +19,8 @@ public class DataBase {
     private Deque<typeAlco> DeqSet = new ArrayDeque<>();
 
     public void addToProdList (OurProduction ourAlc,OverseasProduction ovAlc){
-        ourProdList.add(1,ourAlc);//todo не будет ли перезатирать или начинает с первой позиции?
-        overseasProdList.add(1,ovAlc);//todo тоже самое...
+        ourProdList.add(ourAlc);
+        overseasProdList.add(ovAlc);
     }
 
     public void addToProdMap (AlcoholSpecificity name,Integer number){
