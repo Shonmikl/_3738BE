@@ -13,11 +13,11 @@ public class Main {
         List<Integer> intList = Stream.of(12, 27, 33, 46, 54, 64, 87, 98, 46, 56, 49, 78, 94, 65, 48, 79, 84, 65, 46, 54, 61, 32, 13, 46, 32, 13, 54, 32, 13, 5).toList();
         List<String> strList = Stream.of("Юлия", "Юлия", "Юлия", "Агата", "Вячеслав", "Василиса", "Анна", "Тимофей", "Георгий", "Арсений", "Марьяна", "София", "Майя", "Алиса", "Артём", "Виктория", "Матвей", "Елизавета", "Демид", "Роберт", "Егор", "Злата", "Кирилл", "Максим", "Алина", "Даниил", "Илья", "Андрей", "Анна", "Ульяна", "Кристина", "Владислав", "Валерия", "Артемий", "Данила", "Сергей", "Давид", "Евдокия", "Михаил", "Мария", "Константин", "Маргарита", "Роман", "Никита", "Пётр", "Мирон", "Мия", "Алексей", "Анастасия", "Александра", "Леонид", "Дмитрий", "Марк").toList();
         List<User> userList = new ArrayList<>();
-        userList.add(new User(1, "Michail", true, Countries.Germany, 38));
+        userList.add(new User(1, "Michail", true, Countries.GERMANY, 38));
         userList.add(new User(2, "Vasiliy", false, Countries.UA, 12));
-        userList.add(new User(3, "Alexey", true, Countries.Germany, 38));
+        userList.add(new User(3, "Alexey", true, Countries.GERMANY, 38));
         userList.add(new User(4, "Vitaliy", false, Countries.UA, 22));
-        userList.add(new User(5, "Vika", false, Countries.Germany, 21));
+        userList.add(new User(5, "Vika", false, Countries.GERMANY, 21));
         userList.add(new User(6, "Nik", true, Countries.USA, 12));
         userList.add(new User(7, "Agata", false, Countries.USA, 32));
         // ---------------
