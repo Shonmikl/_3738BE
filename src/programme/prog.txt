@@ -31,7 +31,7 @@ Graphs. Practice.
 
 *********************************General and repetition***************************
 ++Regular expressions. Basics. Regular Expressions, Java RegExp
-Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
+++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 ++Generics,
 Object.equals
 Exceptions.
