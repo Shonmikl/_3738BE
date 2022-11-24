@@ -10,5 +10,14 @@ public class TreeSet {
         set.add(25);
         set.add(53);
         System.out.println(set);
+
+        Integer a = 5;
+        Integer b = 5;
+
+        String s = "W";
+        String s1 = "W";
+
+        System.out.println(a == b);
+        System.out.println(s == s1);
     }
 }
