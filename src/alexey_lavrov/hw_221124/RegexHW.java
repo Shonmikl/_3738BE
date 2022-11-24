@@ -1,6 +1,5 @@
 package alexey_lavrov.hw_221124;
 
-import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import static java.util.stream.Collectors.groupingBy;
