@@ -1,25 +1,20 @@
 package alexey_khudoshin.motorradProject.motorradProject.service;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import motorradProject.db.DbMotorrad;
 import motorradProject.model.Motorrad;
-import org.apache.poi.xssf.streaming.SXSSFCell;
-import org.apache.poi.xssf.streaming.SXSSFRow;
-import org.apache.poi.xssf.streaming.SXSSFSheet;
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-
-import java.time.Instant;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Row;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.ParseException;
-import java.util.ArrayList;
 import java.util.List;
-
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
 
 @Getter
 @Setter
@@ -28,6 +23,9 @@ import lombok.ToString;
 
 
 public class WriteDbToFile {
+    private static Motorrad motorrad;
+    private static DbMotorrad db = new DbMotorrad();
+
     //    Вопросы : как правильно подружать import org.apache.poi?
 //              как делается сборка проекта с помощью умника Mavin?
 //    https://habr.com/ru/post/560520/
@@ -83,17 +81,18 @@ public class WriteDbToFile {
     }
 
     // заполняем список данными
-        private static <Motorrad> List<Motorrad> fillData() {
+    private static  List<Motorrad> fillData() {
 
-        List<Motorrad> dataModel = new ArrayList<>();
-        for (int i = 0; i < dataModel.size(); i++) {
+//        List<Motorrad> dataList = new ArrayList<>();
 
-            dataModel.add(motorrad.getName());
-            dataModel.add(motorrad.getAge());
-            dataModel.add(motorrad.getColor());
-            dataModel.add(motorrad.getVolume());
-            dataModel.add(motorrad.getMaxSpeed());
-        }
-        return dataModel;
+//        for (int i = 0; i < dataList.size(); i++) {
+//            dataList.add(db.backMotorradFromGarage());
+//            dataList.add((Motorrad) motorrad.getAge());
+//            dataList.add((Motorrad) motorrad.getColor());
+//            dataList.add((Motorrad) motorrad.getVolume());
+//            dataList.add((Motorrad) motorrad.getMaxSpeed());
+//        }
+        return db.MotoDb();
+
     }
 }
