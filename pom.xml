@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.example</groupId>
-    <artifactId>MyArrayLis</artifactId>
+    <artifactId>MyArrayList</artifactId>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -27,6 +27,37 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>20.1.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>3.17</version>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.apache.poi</groupId>-->
+<!--                <artifactId>poi-ooxml</artifactId>-->
+<!--                <version>4.1.1</version>-->
+<!--            </dependency>-->
+<!--        -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.poi</groupId>-->
+<!--            <artifactId>poi</artifactId>-->
+<!--            <version>5.2.2</version>-->
+<!--        </dependency>-->
+
+
     </dependencies>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

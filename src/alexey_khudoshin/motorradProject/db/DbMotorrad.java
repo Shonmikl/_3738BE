@@ -1,12 +1,48 @@
 package alexey_khudoshin.motorradProject.db;
-
+import lombok.Getter;
+import lombok.Setter;
 import motorradProject.model.Motorrad;
+import motorradProject.model.OneCylinder;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+@Getter
+@Setter
 
 public class DbMotorrad {
-    public static void main(String[] args) {
+    private TreeMap<Motorrad, Integer> garage = new TreeMap<>();
+    private Set<String> classMotorrad = new TreeSet<>();
+    private Deque<OneCylinder> motorradUnderRepair = new ArrayDeque<>();
+
+    public void addMotorradToGarage(Integer number, Motorrad motorrad) {
+        garage.put(motorrad, number);
+    }
+
+    public Integer getNumberByMotorrad(Motorrad motorrad) {
+        return garage.get(motorrad);
+    }
+
+    public Integer backMotorradFromGarage(Motorrad motorrad) {
+        return garage.remove(motorrad);
+    }
+
+    public void addClassMotorrad(@NotNull Motorrad motorrad) {
+        classMotorrad.add(motorrad.getClass().getSimpleName());
+    }
+
+    public void sendMotorradToService(OneCylinder oCylynder) {
+        motorradUnderRepair.add(oCylynder);
+    }
+
+    public OneCylinder getMotorradFromService() {
+        return motorradUnderRepair.pollFirst();
+    }
+
+    public OneCylinder getBrockenMoto() {
+        return motorradUnderRepair.pollLast();
+    }
+
+    public static List<Motorrad> MotoDb() {
         List<Motorrad> motorradList = new ArrayList<>();
 
         motorradList.add(new Motorrad("Honda CBX 1000", 42, "Red", 1047, 225));
@@ -20,21 +56,6 @@ public class DbMotorrad {
         motorradList.add(new Motorrad("Suzuki GSX 1300 R Hayabusa", 13, "Black Gold", 1299, 312));
         motorradList.add(new Motorrad("husqvarna svartpilen 401 ", 1, "Gray", 373, 168));
 
-        List<String> nameMoto = new ArrayList<>();
-        for (Motorrad motorrad : motorradList) {
-            nameMoto.add(motorrad.getName());
-        }
-        for (int i = 0; i < motorradList.size(); i++) {
-
-        }
-        System.out.println(nameMoto);
-
-        System.out.println();
-
-        List<Integer> motorVolume = new ArrayList<>();
-        for (Motorrad motorrad : motorradList) {
-            motorVolume.add(motorrad.getVolume());
-        }
-        System.out.println(motorVolume);
+        return motorradList;
     }
 }
