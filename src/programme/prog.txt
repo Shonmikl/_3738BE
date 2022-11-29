@@ -14,7 +14,7 @@
 ++Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation.
 ++Data structure 'Map'. Object.hashCode, HashMap implementation.
 ++Trees, Binary Trees, Tree Map.
-Graphs. Practice.
+--  Graphs. Practice.
 
 *********************Lambdas & Stream API************************************
 ++Lambdas, Functional Interfaces, Method references.
@@ -33,8 +33,8 @@ Graphs. Practice.
 ++Regular expressions. Basics. Regular Expressions, Java RegExp
 ++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
 ++Generics,
-Object.equals
-Exceptions.
+++Object.equals
+++Exceptions.
 Unit testing. JUnit.
 LocalDate, LocalDateTime, ZonedDateTime, exercises.
 
@@ -49,7 +49,7 @@ Threads Executors.
 **************************Spring & Spring Boot*********************************
 Apache Maven, сборка проектов.
 Принципы программирования: DRY, YAGNI, KISS, SOLID.
-Reflections. Annotations..
+Reflections. Annotations.
 Spring Framework: Introduction, Context and Beans
 Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture

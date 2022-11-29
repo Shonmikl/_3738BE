@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Test3 {
     public static void main(String[] args) {
+
 //        List<?> list4 = new ArrayList<String>();
 //        list4.add("PPP");
 

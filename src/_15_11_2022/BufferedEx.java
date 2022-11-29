@@ -8,7 +8,8 @@ import java.io.*;
 public class BufferedEx {
     public static void main(String[] args) {
         try(BufferedReader reader = new BufferedReader(new FileReader("fw1.txt"));
-            BufferedWriter writer = new BufferedWriter(new FileWriter("fw2.txt"))) {
+            BufferedWriter writer = new BufferedWriter(new FileWriter("fw2.txt"));
+            FileWriter writer1 = new FileWriter("")) {
             String line;
             while ((line = reader.readLine()) != null) {
                 writer.write(line);
