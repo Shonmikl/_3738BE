@@ -1,7 +1,5 @@
 package alexey_khudoshin.motorradProject.model;
 
-import motorradProject.model.Motorrad;
-
 public class OneCylinder extends Motorrad {
     String systemAddOiled;
 

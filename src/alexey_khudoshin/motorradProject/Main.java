@@ -1,6 +1,6 @@
 package alexey_khudoshin.motorradProject;
 
-import alexey_khudoshin.motorradProject.model.Motorrad;
+import motorradProject.model.Motorrad;
 
 import java.util.*;
 import java.util.stream.Collectors;
