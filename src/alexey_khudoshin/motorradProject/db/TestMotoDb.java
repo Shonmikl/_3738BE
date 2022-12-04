@@ -1,6 +1,6 @@
 package alexey_khudoshin.motorradProject.db;
 
-import motorradProject.model.Motorrad;
+import alexey_khudoshin.motorradProject.model.Motorrad;
 import org.junit.Test;
 
 import java.util.ArrayList;
