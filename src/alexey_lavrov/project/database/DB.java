@@ -6,6 +6,7 @@ import alexey_lavrov.project.models.Bee;
 import alexey_lavrov.project.models.WorkerBee;
 import org.jetbrains.annotations.NotNull;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 @Getter
@@ -17,18 +18,28 @@ public class DB {
 
     public void addBeeToHive(Integer number, Bee bee) {
         hive.put(bee, number);
+        addClassBee(bee);
+
     }
 
     public Integer getNumberByBee(Bee bee) {
         return hive.get(bee);
     }
 
+    public Integer getCountBeeInHive(){
+        return hive.size();
+    }
+
     public Integer catchBeeFromHive(Bee bee) {
         return hive.remove(bee);
     }
 
-    public void addClassBee(@NotNull Bee bee) {
+    private void addClassBee(@NotNull Bee bee) {
         classBee.add(bee.getClass().getSimpleName());
+    }
+
+    public String[] getArrayOfClasses() {
+        return classBee.toArray(new String[0]);
     }
 
     public void sendBeeToRest(WorkerBee wBee) {

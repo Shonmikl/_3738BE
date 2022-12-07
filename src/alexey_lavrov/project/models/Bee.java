@@ -1,5 +1,6 @@
 package alexey_lavrov.project.models;
 
+import com.github.javafaker.Faker;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,12 +20,13 @@ public class Bee implements Comparable<Bee>, Serializable {
     public Bee(Integer id, String name) {
         this.id = id;
         this.name = name;
+        this.birthday = new Faker().date().birthday();
     }
 
     @Override
     public int compareTo(Bee anotherBee) {
         int res;
-        return (res = this.size.compareTo(anotherBee.size)) == 0 ? this.birthday.compareTo(anotherBee.birthday) : res;
+        return (res = this.name.compareTo(anotherBee.name)) == 0 ? this.birthday.compareTo(anotherBee.birthday) : res;
     }
 
     @Override
