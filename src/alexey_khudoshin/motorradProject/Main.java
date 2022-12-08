@@ -6,14 +6,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-//Вопросы:
-//    Как заполнить ArrList отдельно взятыми полями из другого ArrList?
-
-
 public class Main {
+
     public static void main(String[] args) {
         List<Motorrad> motorradList = new ArrayList<>();
-
         motorradList.add(new Motorrad("Honda CBX 1000", 42, "Red", 1047, 225));
         motorradList.add(new Motorrad("Kawasaki Zephyr", 30, "Deep Blue", 1062, 199));
         motorradList.add(new Motorrad("Kawasaki Zephyr", 30, "Deep Blue", 1062, 199));
@@ -32,9 +28,7 @@ public class Main {
         System.out.println(nameMoto);
 
         int[] motorVolume = new int[]{1047, 1062, 648, 1002, 1130, 690, 883, 1193, 1299, 373, 1002, 1002};
-////        for (int i = 0; i <motorradList.size(); i++) {
-////        motorVolume[i] = Motorrad.volume(i);
-////        }
+
 
 //        Обрабатываем массив при помощи Stream
         int[] arrSorted = Arrays.stream(motorVolume)  // стримим
@@ -69,11 +63,11 @@ public class Main {
                 .forEach(System.out::println);
         System.out.println();
 
-/*
+        /*
           TODO:
               Дано: Stream.of("Linux", "Windows", "Mac")
               Надо: Объединение нескольких строк в одну
-         */
+        */
         Stream<String> wordsStream = Stream.of("Linux", "Windows", "Mac");
         Optional<String> collectedString = wordsStream.reduce((x, y) -> x + " " + y);
         System.out.println(collectedString.get());
@@ -92,4 +86,3 @@ public class Main {
 
     }
 }
-

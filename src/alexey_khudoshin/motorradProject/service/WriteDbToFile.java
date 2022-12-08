@@ -26,12 +26,6 @@ public class WriteDbToFile {
     private static Motorrad motorrad;
     private static DbMotorrad db = new DbMotorrad();
 
-    //    Вопросы : как правильно подружать import org.apache.poi?
-//              как делается сборка проекта с помощью умника Mavin?
-//    https://habr.com/ru/post/560520/
-//    https://javadevblog.com/sozdanie-excel-fajla-v-java-s-pomoshh-yu-apache-poi.html
-
-
     //   *****************************************************************************
     public static void main(String[] args) throws ParseException {
 
@@ -72,7 +66,6 @@ public class WriteDbToFile {
     // данными  из dataModel созданного в памяти Excel файла
     private static void createSheetHeader(HSSFSheet sheet, int rowNum, Motorrad dataModel) {
         Row row = sheet.createRow(rowNum);
-
         row.createCell(0).setCellValue(dataModel.getName());
         row.createCell(1).setCellValue(dataModel.getAge());
         row.createCell(2).setCellValue(dataModel.getColor());
@@ -81,18 +74,7 @@ public class WriteDbToFile {
     }
 
     // заполняем список данными
-    private static  List<Motorrad> fillData() {
-
-//        List<Motorrad> dataList = new ArrayList<>();
-
-//        for (int i = 0; i < dataList.size(); i++) {
-//            dataList.add(db.backMotorradFromGarage());
-//            dataList.add((Motorrad) motorrad.getAge());
-//            dataList.add((Motorrad) motorrad.getColor());
-//            dataList.add((Motorrad) motorrad.getVolume());
-//            dataList.add((Motorrad) motorrad.getMaxSpeed());
-//        }
+    private static List<Motorrad> fillData() {
         return db.MotoDb();
-
     }
 }
