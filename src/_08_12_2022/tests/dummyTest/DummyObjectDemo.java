@@ -3,6 +3,7 @@ package _08_12_2022.tests.dummyTest;
 import _08_12_2022.srcs.dummy.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 
 
 public class DummyObjectDemo {
@@ -34,7 +35,7 @@ public class DummyObjectDemo {
     public void addNullCustomerTest() {
         Customer dummy = null;
         AddressBook addressBook = new AddressBook();
-        Assertions.assertThrows(NullPointerException.class, ()->addressBook.addCustomer(dummy));
+        Assertions.assertThrows(NullPointerException.class, () -> addressBook.addCustomer(dummy));
     }
 
     /**
@@ -43,7 +44,9 @@ public class DummyObjectDemo {
 
     @Test
     public void addCustomerWithDummyTest() {
-        Customer d =
+        Customer dummy = Mockito.mock(Customer.class);
+        AddressBook addressBook = new AddressBook();
+        addressBook.addCustomer(dummy);
+        Assertions.assertEquals(1, addressBook.getNumberOfCustomers());
     }
-
 }
