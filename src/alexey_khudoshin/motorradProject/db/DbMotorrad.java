@@ -1,8 +1,9 @@
 package alexey_khudoshin.motorradProject.db;
+
+import alexey_khudoshin.motorradProject.model.Motorrad;
+import alexey_khudoshin.motorradProject.model.OneCylinder;
 import lombok.Getter;
 import lombok.Setter;
-import motorradProject.model.Motorrad;
-import motorradProject.model.OneCylinder;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
