@@ -4,14 +4,20 @@ import org.junit.experimental.categories.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.extension.ParameterResolver;
+import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 public class CategoriesTest {
 
 
-    public interface FastTests {}
-    public interface SlowTests {}
-    public interface SmokeTests {}
+    public interface FastTests {
+    }
+
+    public interface SlowTests {
+    }
+
+    public interface SmokeTests {
+    }
 
     public static class A {
 
@@ -42,10 +48,9 @@ public class CategoriesTest {
         }
     }
 
-    //@RunWith(CategoriesTest.class)
-    @Categories.IncludeCategory({FastTests.class, SmokeTests.class})
-    @Suite.SuiteClasses({A.class, B.class})
+    @RunWith(Categories.class)
+    @Categories.IncludeCategory({CategoriesTest.FastTests.class, CategoriesTest.SmokeTests.class})
+    @Suite.SuiteClasses({CategoriesTest.A.class, CategoriesTest.B.class})
     public static class SlowTestSuite {
-
     }
 }
