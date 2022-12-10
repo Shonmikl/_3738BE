@@ -1,5 +1,4 @@
 package alexey_khudoshin.motorradProject.db;
-
 import alexey_khudoshin.motorradProject.model.Motorrad;
 import alexey_khudoshin.motorradProject.model.OneCylinder;
 import lombok.Getter;

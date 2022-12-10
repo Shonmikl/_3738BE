@@ -3,7 +3,6 @@ package alexey_khudoshin.DZ_08_11_2022;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 public class Moto {
     private String name;
     private int age;
@@ -158,9 +157,9 @@ public class Moto {
         String Jawa = null;
         String MT = null;
         String Ural = null;
-        String red=null;
-        String black=null;
-        String green=null;
+        String red = null;
+        String black = null;
+        String green = null;
 
         Moto mot1 = new Moto(Minsk, 46, red, 11, 1);
         Moto mot2 = new Moto(Jawa, 49, red, 18, 2);
@@ -174,16 +173,6 @@ public class Moto {
         bikes.put(4, mot4.getName());
 
         System.out.println(bikes);
-
-//        List<Map.Entry<String, String>> bikesNameAge = bikes.entrySet().stream()
-//                .flatMap(entry -> entry.getValue().stream()
-//                        .map(listElement -> new AbstractMap.SimpleEntry<>(entry.getKey(), listElement))
-//                ).collect(Collectors.toList());
-
-
-//        System.out.println(bikesNameAge);
-
     }
 
 }
-

@@ -27,10 +27,8 @@ public class Main {
         }
         System.out.println(nameMoto);
 
+//        Обрабатываем массив при помощи Stream:
         int[] motorVolume = new int[]{1047, 1062, 648, 1002, 1130, 690, 883, 1193, 1299, 373, 1002, 1002};
-
-
-//        Обрабатываем массив при помощи Stream
         int[] arrSorted = Arrays.stream(motorVolume)  // стримим
                 // шось робим:
                 .filter(el -> el > 600)    //фильтр: оставляет в массиве элементы массива со значением более 600
@@ -83,6 +81,35 @@ public class Main {
         List<String> fruits = Stream.of("apple", "banana", "lemon", "orange").toList();
         Map<Character, String> map = fruits.stream().collect(Collectors.toMap(s -> s.charAt(0), s -> s));
         System.out.println(map);
+
+        //    Enums Brands Moto:
+        BrandMoto brandMoto1 = BrandMoto.HONDA;
+        BrandMoto brandMoto2 = BrandMoto.KAWASAKI;
+        BrandMoto brandMoto3 = BrandMoto.BMW;
+        BrandMoto brandMoto4 = BrandMoto.YAMAHA;
+        BrandMoto brandMoto5 = BrandMoto.SUZUKI;
+        BrandMoto brandMoto6 = BrandMoto.DUCATI;
+        BrandMoto brandMoto7 = BrandMoto.KTM;
+        BrandMoto brandMoto8 = BrandMoto.HUSQVARNA;
+        BrandMoto brandMoto9 = BrandMoto.HARLEY_DAVIDSON;
+
+        List<String> rating = new ArrayList<>();
+
+        rating.add(brandMoto1.name());
+        rating.add(brandMoto2.name());
+        rating.add(brandMoto3.name());
+        rating.add(brandMoto4.name());
+        rating.add(brandMoto5.name());
+        rating.add(brandMoto6.name());
+        rating.add(brandMoto7.name());
+        rating.add(brandMoto8.name());
+        rating.add(brandMoto9.name());
+
+        System.out.println("Rating Moto:");
+        for (int i = 0; i < rating.size(); i++) {
+            System.out.println(rating.get(i).toString());
+        }
+
 
     }
 }

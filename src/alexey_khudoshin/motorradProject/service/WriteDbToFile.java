@@ -1,11 +1,11 @@
 package alexey_khudoshin.motorradProject.service;
 
+import alexey_khudoshin.motorradProject.db.DbMotorrad;
+import alexey_khudoshin.motorradProject.model.Motorrad;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import motorradProject.db.DbMotorrad;
-import motorradProject.model.Motorrad;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
