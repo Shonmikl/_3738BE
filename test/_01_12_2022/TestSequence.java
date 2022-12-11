@@ -1,11 +1,11 @@
 package _01_12_2022;
 
-import org.junit.FixMethodOrder;
-import org.junit.jupiter.api.*;
-import org.junit.runners.MethodSorters;
+//import org.junit.FixMethodOrder;
+//import org.junit.jupiter.api.*;
+//import org.junit.runners.MethodSorters;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class TestSequence {
+//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+//public class TestSequence {
 
 //    @BeforeAll
 //    static void initAll(TestInfo info){
@@ -50,13 +50,13 @@ public class TestSequence {
 //        System.out.println("in " + info.getDisplayName());
 //    }
 
-    @RepeatedTest(5)
-    void testRepeated() {
-        System.out.println("*****");
-    }
-
-    @Nested
-    class ALTest {
-
-    }
-}
+//    @RepeatedTest(5)
+//    void testRepeated() {
+//        System.out.println("*****");
+//    }
+//
+//    @Nested
+//    class ALTest {
+//
+//    }
+//}
