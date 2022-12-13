@@ -1,7 +1,6 @@
 package _08_12_2022.tests.mockTest;
 
 import _08_12_2022.srcs.mock.*;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
