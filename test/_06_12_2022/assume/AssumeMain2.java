@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class AssumeTest2 {
+public class AssumeMain2 {
     @BeforeEach
     void init() {
         String v = "3";

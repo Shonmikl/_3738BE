@@ -12,7 +12,7 @@ import java.util.NoSuchElementException;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FruitBasketTest {
+class FruitBasketMain {
 
     private final FruitBasket basket = new FruitBasket();
     private final Fruit apple = new Fruit("Apple", 120);
