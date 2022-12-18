@@ -1,4 +1,4 @@
-package alexey_khudoshin.motorradProject.model;
+package motorradProject.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package alexey_khudoshin.motorradProject.model;//package DZ_27_10_2022;
+package motorradProject.model;//package DZ_27_10_2022;
 
 public class TwoCylinder extends Motorrad {
     String systemSeparateOiled;

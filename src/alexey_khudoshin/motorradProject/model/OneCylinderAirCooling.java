@@ -1,4 +1,4 @@
-package alexey_khudoshin.motorradProject.model;
+package motorradProject.model;
 
 public class OneCylinderAirCooling extends OneCylinder {
     String airCooling;

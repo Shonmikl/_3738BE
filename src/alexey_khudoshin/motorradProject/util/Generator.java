@@ -1,4 +1,4 @@
-package alexey_khudoshin.motorradProject.util;
+package motorradProject.util;
 
 import com.github.javafaker.Faker;
 import motorradProject.model.Motorrad;

@@ -1,4 +1,4 @@
-package alexey_khudoshin.motorradProject;
+package motorradProject;
 
 public enum BrandMoto {
     HONDA,
