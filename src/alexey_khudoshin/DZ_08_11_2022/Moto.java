@@ -1,7 +1,8 @@
-package alexey_khudoshin.DZ_08_11_2022;
+package DZ_08_11_2022;
 
 import java.util.*;
 import java.util.stream.Collectors;
+
 
 public class Moto {
     private String name;
@@ -176,3 +177,4 @@ public class Moto {
     }
 
 }
+
