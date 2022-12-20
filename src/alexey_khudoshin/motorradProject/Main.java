@@ -10,6 +10,9 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
+        Thread thread = new Thread(new NewThread());
+        thread.start();
+
         List<Motorrad> motorradList = new ArrayList<>();
         motorradList.add(new Motorrad("Honda CBX 1000", 42, "Red", 1047, 225));
         motorradList.add(new Motorrad("Kawasaki Zephyr", 30, "Deep Blue", 1062, 199));
@@ -110,7 +113,5 @@ public class Main {
         for (int i = 0; i < rating.size(); i++) {
             System.out.println(rating.get(i).toString());
         }
-
-
     }
 }
