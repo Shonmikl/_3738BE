@@ -1,12 +1,12 @@
-package _01_12_2022;
-
-import org.junit.FixMethodOrder;
-import org.junit.jupiter.api.*;
-import org.junit.runners.MethodSorters;
-
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class TestSequence {
-
+//package _01_12_2022;
+//
+//import org.junit.FixMethodOrder;
+//import org.junit.jupiter.api.*;
+//import org.junit.runners.MethodSorters;
+//
+//@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+//public class TestSequence {
+//
 //    @BeforeAll
 //    static void initAll(TestInfo info){
 //        System.out.println("in " + info.getDisplayName());
@@ -23,7 +23,7 @@ public class TestSequence {
 //    void test(TestInfo info) {
 //        System.out.println("test()");
 //    }
-
+//
 //    @Test
 //    @DisplayName("!!")
 //    void test1(TestInfo info) {
@@ -49,14 +49,14 @@ public class TestSequence {
 //    void test3(TestInfo info) {
 //        System.out.println("in " + info.getDisplayName());
 //    }
-
-    @RepeatedTest(5)
-    void testRepeated() {
-        System.out.println("*****");
-    }
-
-    @Nested
-    class ALTest {
-
-    }
-}
+//
+//    @RepeatedTest(5)
+//    void testRepeated() {
+//        System.out.println("*****");
+//    }
+//
+//    @Nested
+//    class ALTest {
+//
+//    }
+//}

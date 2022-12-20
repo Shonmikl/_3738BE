@@ -3,7 +3,7 @@ package _06_12_2022.assume;
 import org.junit.Assume;
 import org.junit.jupiter.api.Test;
 
-public class AssumeTest1 {
+public class AssumeMain1 {
 
 //    @Test
 //    void testIfGreaterThan4() {

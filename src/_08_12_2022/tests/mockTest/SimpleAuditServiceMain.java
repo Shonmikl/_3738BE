@@ -11,7 +11,7 @@ import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
-public class SimpleAuditServiceTest {
+public class SimpleAuditServiceMain {
 
     @Mock
     private TradeRepository tradeRepository;

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 
-class TestTest {
+class TestMain {
 
     private Test test = new Test();
 
