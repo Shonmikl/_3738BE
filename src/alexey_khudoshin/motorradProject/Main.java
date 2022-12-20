@@ -1,5 +1,6 @@
 package motorradProject;
 
+import motorradProject.model.BrandMotoEnum;
 import motorradProject.model.Motorrad;
 
 import java.util.*;
@@ -83,15 +84,15 @@ public class Main {
         System.out.println(map);
 
         //    Enums Brands Moto:
-        BrandMoto brandMoto1 = BrandMoto.HONDA;
-        BrandMoto brandMoto2 = BrandMoto.KAWASAKI;
-        BrandMoto brandMoto3 = BrandMoto.BMW;
-        BrandMoto brandMoto4 = BrandMoto.YAMAHA;
-        BrandMoto brandMoto5 = BrandMoto.SUZUKI;
-        BrandMoto brandMoto6 = BrandMoto.DUCATI;
-        BrandMoto brandMoto7 = BrandMoto.KTM;
-        BrandMoto brandMoto8 = BrandMoto.HUSQVARNA;
-        BrandMoto brandMoto9 = BrandMoto.HARLEY_DAVIDSON;
+        BrandMotoEnum brandMoto1 = BrandMotoEnum.HONDA;
+        BrandMotoEnum brandMoto2 = BrandMotoEnum.KAWASAKI;
+        BrandMotoEnum brandMoto3 = BrandMotoEnum.BMW;
+        BrandMotoEnum brandMoto4 = BrandMotoEnum.YAMAHA;
+        BrandMotoEnum brandMoto5 = BrandMotoEnum.SUZUKI;
+        BrandMotoEnum brandMoto6 = BrandMotoEnum.DUCATI;
+        BrandMotoEnum brandMoto7 = BrandMotoEnum.KTM;
+        BrandMotoEnum brandMoto8 = BrandMotoEnum.HUSQVARNA;
+        BrandMotoEnum brandMoto9 = BrandMotoEnum.HARLEY_DAVIDSON;
 
         List<String> rating = new ArrayList<>();
 

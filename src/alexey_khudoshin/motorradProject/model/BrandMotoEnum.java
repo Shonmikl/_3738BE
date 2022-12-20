@@ -1,6 +1,6 @@
-package motorradProject;
+package motorradProject.model;
 
-public enum BrandMoto {
+public enum BrandMotoEnum {
     HONDA,
     KAWASAKI,
     YAMAHA,
