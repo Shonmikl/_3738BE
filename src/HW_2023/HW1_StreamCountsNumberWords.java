@@ -2,12 +2,9 @@ package HW_2023;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Set;
+import java.util.stream.Collectors;
 
 public class HW1_StreamCountsNumberWords {
-//    public static void main(String[] args) {
-//        wordCountInLines();
-//    }
 
     public static String inputString() {
 
@@ -29,32 +26,13 @@ public class HW1_StreamCountsNumberWords {
         return words;
     }
 
-    public static Set<String> wordCountInLines() {
-        String str = inputString();
-        System.out.println("the string is split into substrings:");
-        String[] words = str.split(" ");
-        for (String word : words) {
-            System.out.println(word);
+    public static class wordCountInLines {
+        public static void main(String[] args) {
+            String str = inputString();
+            Arrays.stream(str.split(" "))
+                    .collect(Collectors.groupingBy(item -> item, Collectors.counting()))
+                    .entrySet()
+                    .forEach(k -> System.out.println(k.getKey() + " : " + k.getValue()));
         }
-//        List<String> wordsList = Stream.of(words).toList();
-//        wordsList.stream()
-        Arrays.stream(words)
-//                .collect(Collectors.groupingBy(item -> item, Collectors.counting()))
-//                .entrySet()
-                .forEach(System.out::println);
-        return wordCountInLines();
     }
 }
-
-
-
-//                .collect(Collectors.toList());
-//        for (String subStr : distinct) {
-//            System.out.println(subStr);
-//        Arrays.stream(words)
-//                .filter(words::equals).count();
-//
-//        System.out.println(Arrays.toString(words));
-//        List<String> distinct = Arrays.asList(words).stream().map(String::toLowerCase).sorted().distinct().collect(Collectors.toList());
-//        for (String subStr : distinct) {
-//            System.out.println(subStr);

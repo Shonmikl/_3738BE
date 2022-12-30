@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HW2_FibonacciNumber {
     public static void main(String[] args) {
-        fibonacciNumberCycle();
+        System.out.println("The number of the Fibonacci series under the index is: " + fibNumbRec(10));
     }
 
     public static int fibonacciNumberCycle() {
@@ -33,4 +33,22 @@ public class HW2_FibonacciNumber {
         System.out.println("The number of the Fibonacci series under the index " + index + " is: " + fib);
         return index;
     }
+
+
+    public static int fibNumbRec(int index) {
+
+        if (index == 0) {
+            return 0;
+        }
+        if (index == 1) {
+            return 1;
+        }
+        if (index < 0 || index > 92) {
+            throw new IndexOutOfBoundsException(index);
+        } else {
+            return fibNumbRec(index - 2) + fibNumbRec(index - 1);
+        }
+    }
+
+
 }
