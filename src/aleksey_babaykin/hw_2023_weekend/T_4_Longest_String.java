@@ -19,6 +19,7 @@ public class T_4_Longest_String {
                 .filter(s ->
                         s.length() == Stream.of(inStringArray)
                                 .max(Comparator.comparing(String::length))
+                                .map(item -> {System.out.println("1234");return item;})
                                 .get().length())
                 .forEach(System.out::println);
     }
