@@ -24,6 +24,7 @@ class Person extends Thread {
         this.start();
     }
 
+    @Override
     public void run() {
         try {
             System.out.println(name + " is waiting for...");
