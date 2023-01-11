@@ -26,6 +26,7 @@ class GeneratorTest {
         assertTrue( bee2 instanceof WorkerBee);
     }
 
+    @Test
     void makeBeeWithException() {
         assertThrows(RuntimeException.class, (Executable) Generator.makeBee(Bee.class));
     }
