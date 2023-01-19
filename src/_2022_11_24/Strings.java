@@ -1,4 +1,4 @@
-package _24_11_2022;
+package _2022_11_24;
 
 public class Strings {
     public static void main(String[] args) {

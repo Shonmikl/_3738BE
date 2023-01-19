@@ -15,7 +15,7 @@
 ++Data structure 'Map'. Object.hashCode, HashMap implementation.
 ++Trees, Binary Trees, Tree Map.
 ++Graphs. Practice.
-!!Method Reference
+++Method Reference
 
 *********************Lambdas & Stream API************************************
 ++Lambdas, Functional Interfaces, Method references.
