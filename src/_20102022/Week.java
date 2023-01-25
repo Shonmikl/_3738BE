@@ -27,16 +27,16 @@ class Today {
         this.week = week;
     }
 
-    void getDay() {
-        switch (week) {
-            case MONDAY,
-                    TUESDAY,
-                    THURSDAY,
-                    FRIDAY,
-                    WEDNESDAY -> System.out.println("Study JAVA");
-            case SATURDAY,
-                    SUNDAY -> System.out.println("RELAX");
-        }
-        System.out.println(week.getMood());
-    }
+//    void getDay() {
+//        switch (week) {
+//            case MONDAY,
+//                    TUESDAY,
+//                    THURSDAY,
+//                    FRIDAY,
+//                    WEDNESDAY -> System.out.println("Study JAVA");
+//            case SATURDAY,
+//                    SUNDAY -> System.out.println("RELAX");
+//        }
+//        System.out.println(week.getMood());
+  //  }
 }

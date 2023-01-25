@@ -11,7 +11,7 @@ public class EmpObjectOut {
         Employee newEmp = new Employee("Alexey", "IT", "Khudoshin",
                 38, 10000);
         try (ObjectOutputStream outputStream =
-                new ObjectOutputStream(new FileOutputStream("emp11s.bin"))){
+                     new ObjectOutputStream(new FileOutputStream("emp11s.bin"))) {
             outputStream.writeObject(newEmp);
             System.out.println("DONE!!!");
         } catch (IOException e) {
