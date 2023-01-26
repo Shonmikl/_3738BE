@@ -73,18 +73,18 @@ public class Person extends Thread {
         return count;
     }
     public void run() {
-        Action reply;
-        for (int i = 0; i < ; i++) {
-            
-        }{
-            try {
-                reply = exchanger.exchange(action);
-                whoWins(action, reply);
-                sleep(3000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+//        Action reply;
+//        for (int i = 0; i < ; i++) {
+//
+//        }{
+//            try {
+//                reply = exchanger.exchange(action);
+//                whoWins(action, reply);
+//                sleep(3000);
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//        }
     }
 
 
