@@ -29,7 +29,6 @@
 ++Reading/Writing of bytes.
 ++Reading/Writing of strings.
 
-
 *********************************General and repetition***************************
 ++Regular expressions. Basics. Regular Expressions, Java RegExp
 ++Class String and its methods. Immutable. StringBuilder, StringBuffer, performance test.
@@ -48,14 +47,16 @@
 ++Threads Executors.
 
 **************************Spring & Spring Boot*********************************
-Apache Maven, сборка проектов.
-Принципы программирования: DRY, YAGNI, KISS, SOLID.
-Reflections. Annotations.
+++Apache Maven, сборка проектов.
+++Принципы программирования: DRY, YAGNI, KISS,
+++SOLID.
+++Reflections.
+++Annotations.
 Spring Framework: Introduction, Context and Beans
 Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture
 Spring Boot: Implementing Rest Controllers
-Java JDBC API, работа с базами данных
+!!Java JDBC API, работа с базами данных
 Spring Boot: JPA and databases
 Spring Boot: validation
 Spring Boot: logging and AOP basics
