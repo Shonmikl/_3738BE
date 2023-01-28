@@ -3,7 +3,7 @@ package aleksey_babaykin.hw_20230124;
 public class Task1FindElements {
     private int[] arrayInit;
     private int amount;
-// it works only for numbers >=0
+// it works only for array element >=0
     public static void main(String[] args) {
         Task1FindElements task = new Task1FindElements();
         task.initArray();

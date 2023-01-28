@@ -3,7 +3,7 @@ package aleksey_babaykin.hw_20230124;
 public class Task2FindInland {
     private int [][]  arrayOcean;
     private int maxIsland;
-    private int minPoints = -500000000;
+    private final int minPoints = -500000000;
 // it works for array with island maxpoints less than -500 000 000
     public static void main(String[] args) {
         Task2FindInland task = new Task2FindInland();
@@ -36,7 +36,7 @@ public class Task2FindInland {
     }
 
     public void findTheBiggestIlandeInOcean(){
-        int tempMax = 0;
+        int tempMax;
         this.maxIsland = -1;
         for(int i = 1; i < arrayOcean.length - 1;i++) {
             for (int j = 1; j < arrayOcean[i].length - 1; j++) {
