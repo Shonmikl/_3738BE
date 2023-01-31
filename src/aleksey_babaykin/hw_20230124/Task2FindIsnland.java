@@ -1,14 +1,14 @@
 package aleksey_babaykin.hw_20230124;
 
-public class Task2FindInland {
+public class Task2FindIsnland {
     private int [][]  arrayOcean;
-    private int maxIsland;
-    private final int minPoints = -500000000;
-// it works for array with island maxpoints less than -500 000 000
+    private long maxIsland;
+    private static final long minPoints = Long.MIN_VALUE >> 3;
+
     public static void main(String[] args) {
-        Task2FindInland task = new Task2FindInland();
+        Task2FindIsnland task = new Task2FindIsnland();
         task.initOcean();
-        task.findTheBiggestIlandeInOcean();
+        task.findTheBiggestIslandInOcean();
         System.out.printf( (task.maxIsland <=0 ? "Island = 0 (%d)" : "Max island = %d") , task.maxIsland);
     }
     public void initOcean(){
@@ -35,8 +35,8 @@ public class Task2FindInland {
         };
     }
 
-    public void findTheBiggestIlandeInOcean(){
-        int tempMax;
+    public void findTheBiggestIslandInOcean(){
+        long tempMax;
         this.maxIsland = -1;
         for(int i = 1; i < arrayOcean.length - 1;i++) {
             for (int j = 1; j < arrayOcean[i].length - 1; j++) {
@@ -47,14 +47,14 @@ public class Task2FindInland {
             }
         }
     }
-    private int calculateItems(int x, int y){
+    private long calculateItems(int x, int y){
         if( arrayOcean[x][y] == 1 && (x == 0 || y == 0 || x == (arrayOcean.length) -1 || y == (arrayOcean[x].length) - 1)){
             arrayOcean[x][y] = 0;
             return minPoints;
         }
         if( arrayOcean[x][y] == 1){
             arrayOcean[x][y] = 0;
-            int tmpAmount;
+            long tmpAmount;
             tmpAmount =  1 + calculateItems(x-1,y)
                     + calculateItems(x,y-1)
                     + calculateItems(x+1,y)
