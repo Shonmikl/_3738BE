@@ -52,12 +52,64 @@
 ++SOLID.
 ++Reflections.
 ++Annotations.
-Spring Framework: Introduction, Context and Beans
-Spring Framework: Beans configuration
+++Spring Framework: Introduction, Context and Beans
+++Spring Framework: Beans configuration
 Spring Boot: Onion (Hexagonal) architecture
 Spring Boot: Implementing Rest Controllers
-!!Java JDBC API, работа с базами данных
-Spring Boot: JPA and databases
+++Java JDBC API, работа с базами данных
+++Spring Boot: JPA and databases
 Spring Boot: validation
-Spring Boot: logging and AOP basics
+++Spring Boot: logging and AOP basics
 Spring Boot: scheduled jobs
+
+
+
+CRUD::
+Account || getAllAccountWhereStatusIs Active/Remote/Pending/Blocked  findAccountsWhereProductIdIs....AndStatusIs.....
+Agreement || findAgreementsWhereManagerIDIs...  findAgreementsWhereClientIdIs....
+Client || getAllClientsWhereStatusActive....  getAllClientsWhereBalanceMoreThan..... getAllClientsWhereTransactionMoreThan.....
+Manager || findAllManagersSortedByProductQuantity
+Product || findAllProductsWhereAgreementsQuantityMoreThan....   findAllChangedProducts
+Transaction || findAllTransactionsWhereClientIdIs...   findAllTransactionsWhereAccountCurrencyIs...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
