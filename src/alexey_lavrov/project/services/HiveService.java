@@ -17,7 +17,6 @@ public class HiveService {
 
     public void addBeeInHive(Bee bee) {
         db.addBeeToHive(db.getHive().size() + 1, bee);
-        db.addClassBee(bee);
     }
 
     public WorkerBee sendBeeToRest(WorkerBee bee) {
